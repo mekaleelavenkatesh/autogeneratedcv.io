@@ -82,3 +82,15 @@ main>.right>.block1{
 .print{
     display: none;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
