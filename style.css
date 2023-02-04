@@ -94,3 +94,44 @@ main>.right>.block1{
     justify-content: space-between;
     align-items: center;
 }
+input[type=text], select, textarea {
+    width: 60%;
+    padding: 8px;
+    border: 2px solid rgb(101, 28, 28);
+    /* border-radius: 20px; */
+    resize: vertical;
+    justify-content: center;
+    display: block;
+    float: right;
+   
+        
+    
+  }
+
+  input[type=email], select, textarea {
+    width: 60%;
+    padding: 8px;
+    border: 2px solid rgb(101, 28, 28);
+    /* border-radius: 20px; */
+    resize: vertical;
+    justify-content: center;
+    float: right;
+    display: block;
+  }
+
+  input[type=tel], select, textarea {
+    width: 60%;
+    padding: 8px;
+    border: 2px solid rgb(101, 28, 28);
+    /* border-radius: 20px; */
+    resize: vertical;
+    justify-content: center;
+    float: right;
+    display: block;
+  }
+
+  label {
+    padding: 30px 30px 30px 0;
+    display: inline-block;
+    justify-content: center;
+  }
