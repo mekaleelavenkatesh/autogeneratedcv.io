@@ -14,79 +14,110 @@
             <form>
                 <!-- Name , Email , Phone , Github , Linkedin -->
                 <label for="name">Name :</label>
-                <input type="text" id="name" placeholder="Name"><br>
+                <input type="text" id="Name" placeholder="Name"><br>
                 <label for="email">Email :</label>
-                <input type="email"id="email" placeholder="Email"><br>
+                <input type="email"id="Email" placeholder="Email"><br>
                 <label for="phone">Phone :</label>
-                <input type="text" id="phone" placeholder="Phone"><br>
+                <input type="text" id="Phone" placeholder="Phone"><br>
                 <label for="Github">Github :</label>
                 <input type="text" id="Github" placeholder="Github"><br>
                 <label for="linkedin">Linkedin:</label>
-                <input type="text" id="linkedin" placeholder="Linkedin"><br>
+                <input type="text" id="Linkedin" placeholder="Linkedin"><br>
                 <fieldset>
                     <legend>Education</legend>
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                     <label for="degree">Degree :</label>
-                <input type="text" id="degree" placeholder="Degree"><br>
+                <input type="text" id="Degree" placeholder="Degree"><br>
                 <label for="college">College:</label>
-                <input type="text"id="college" placeholder="College"><br>
+                <input type="text"id="College" placeholder="College"><br>
                 <label for="startingyear">Starting year :</label>
-                <input type="text" id="startingyear" placeholder="starting year"><br>
+                <input type="text" id="StartingYear" placeholder="starting year"><br>
                 <label for="passingyear">Passing year :</label>
-                <input type="text" id="passingyear" placeholder="Passing year"><br>
+                <input type="text" id="PassingYear" placeholder="Passing year"><br>
                 <label for="cgpa">CGPA :</label>
-                <input type="text" id="cgpa" placeholder="CGPA"><br>
+                <input type="text" id="CGPA" placeholder="CGPA"><br>
                 </fieldset>
                 <fieldset>
                     <legend>Skills</legend>
                     <!-- skills -->
                     <label for="skills">Skills:</label>
-                    <textarea name="skills" id="skills"placeholder="eg.HTML ,CSS"cols="20" rows="5"></textarea>
+                    <textarea name="skills" id="Skills"placeholder="eg.HTML ,CSS"cols="20" rows="5"></textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Projects</legend>
                     <!-- Project , Description , Link -->
                     <label for="project">Project :</label>
-                    <input type="text" id="project" placeholder="Project"><br>
+                    <input type="text" id="Project" placeholder="Project"><br>
                     <label for="description">Description :</label>
-                    <textarea name="description" id="description" cols="20" rows="5" placeholder="Write in HTMl format"></textarea><br>
+                    <textarea name="description" id="Description" cols="20" rows="5" placeholder="Write in HTMl format"></textarea><br>
                     <label for="link">Link :</label>
-                    <input type="text"id="link"placeholder="Link"><br>
+                    <input type="text"id="Link"placeholder="Link"><br>
                 </fieldset>
                 <fieldset>
                     <legend>Experience</legend>
                     <!-- Company , Designation , Duration , Description -->
                     <label for="company">Company:</label>
-                    <input type="text" id="company" placeholder="Company"><br>
+                    <input type="text" id="Company" placeholder="Company"><br>
                     <label for="designation">designation:</label>
-                    <input type="text" id="designation" placeholder="Designation"><br>
+                    <input type="text" id="Designation" placeholder="Designation"><br>
                     <label for="duration">Duration :</label>
-                    <input type="text" id="duration" placeholder="Duration"><br>
-                    <label for="description1">Description :</label>
-                    <textarea name="description1" id="description1" cols="20" rows="5" placeholder="Write in HTMl format"></textarea><br>
+                    <input type="text" id="Duration" placeholder="Duration"><br>
+                    <label for="Dsescription2">Description :</label>
+                    <textarea name="description1" id="Description2" cols="20" rows="5" placeholder="Write in HTMl format"></textarea><br>
                 </fieldset>
-                <button type="submit" class="btn">submit</button>
+                <button type="submit" class="btn" onclick="handleSubmit()">submit</button>
                 <button type="reset" class="btn">reset</button>
-                <button class="btn" onclick="handleLeft()"><<</button>
+                <button class="btn" onclick="handleLeft()">view & print</button>
             </form>
         </div>
         <div class="right">
-            <div class="block1">
-                <!-- Name -->
-                <!--Email , Phone , Github , Linkedin  -->
-            </div>
-            <div class="block2">
-                <h2>Education</h2> 
-            </div>
-            <div class="block3">
-            </div>
-            <div class="block4">
-                <h2>Project</h2>
-            </div>
-            <div class="block5">
-                <h2>Experience</h2>
-            </div>
-            <button class="btn print" onclick="handlePrint()">Print</button>
+            <div class="title center" id="display-name"></div>
+        <div class="top">
+          <span class="link center" id="display-email"></span>
+          <span class="link center" id="display-phone"></span>
+          <span class="link center" id="display-github"></span>
+          <span class="link center" id="display-linkedin"></span>
+        </div>
+        <span class="heading" id="display-email" class="center"></span>
+        <span class="sub-heading" id="display-phone"></span>
+        <span class="normal-text" id="display-github"></span>
+        <span class="normal-text" id="display-linkedin"></span>
+
+        <!-- Education -->
+        <div class="main-heading">Education</div>
+        <div class="heading" id="display-college"></div>
+        <div class="sub-heading" id="display-degree"></div>
+        <div>
+          <span class="normal-text" id="display-startingyear"></span
+          ><span class="normal-text" id="display-passingyear"></span>
+        </div>
+
+        <div id="display-cgpa" class="normal-text"></div>
+        <!-- skills  -->
+        <div class="main-heading">Skills</div>
+
+        <div id="display-skills" class="heading"></div>
+        <div class="main-heading">Projects</div>
+
+        <!-- project -->
+        <div id="display-project" class="heading"></div>
+        <!-- description -->
+        <div id="display-description" class="normal-text"></div>
+        <!-- link  -->
+        <div id="display-link" class="link"></div>
+        <div class="main-heading">Experience</div>
+        <!-- Designation -->
+        <div id="display-designation" class="heading"></div>
+        <!-- company  -->
+        <div id="display-company" class="sub-heading"></div>
+
+        <!-- Duration -->
+        <div id="display-duration" class="normal-text"></div>
+        <!-- description2 -->
+        <div id="display-description2" class="normal-text"></div>
+        <button class="btn print" onclick="handlePrint()">Print</button>
+
+      </div>
         </div>
     </main>
 

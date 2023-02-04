@@ -57,6 +57,7 @@ main>.left fieldset{
     color: yellow;
     font-weight: 600;
     cursor: pointer;
+    margin-bottom: 60px;
 }
 /* resume */
 main>.right{
@@ -67,18 +68,18 @@ main>.right{
     height: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
-main>.right>.block1{
+ main>.right>.block1{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     color: gray;
     width: 60vw;
-}
+} */
 .print{
     display: none;
 }
@@ -133,5 +134,66 @@ input[type=text], select, textarea {
   label {
     padding: 30px 30px 30px 0;
     display: inline-block;
+    justify-content: center;
+  }
+  .heading {
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(37, 38, 94);
+    margin-bottom: 10px;
+  }
+  
+  .main-heading {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(37, 38, 94, 0.6);
+    margin-top: 10px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-block-color: black;
+    margin-bottom: 20px;
+  }
+  .sub-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(37, 38, 94);
+    margin-bottom: 10px;
+  }
+  
+  .normal-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(37, 38, 94, 0.8);
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(37, 38, 94, 0.6);
+    margin-top: 20px;
+    /* border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-block-color: black; */
+    margin-bottom: 10px;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .link {
+    font-size: 16px;
+    font-weight: 400;
+    color: skyblue;
+    margin-bottom: 10px;
+  }
+  
+  #display-name{
+    text-align: center;
+  }
+
+  .right .top{
+    display: flex;
     justify-content: center;
   }
