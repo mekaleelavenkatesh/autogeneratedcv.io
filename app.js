@@ -116,7 +116,7 @@ function handleLeft() {
   const print = document.querySelector(".print");
   // write more codes here
   left.style.display = "none";
-  right.style.width = "50%";
+  right.style.width = "100%";
   print.style.display = "block";
 }
 function handlePrint() {
